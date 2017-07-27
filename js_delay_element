@@ -1,0 +1,6 @@
+<script type="text/javascript">
+function showIt() {
+document.getElementById("container").style.display = "table-cell";
+}
+setTimeout("showIt()",11200);
+</script>
