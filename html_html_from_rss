@@ -1,0 +1,35 @@
+//html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+<title>Naslov</title>
+<!-- Custom your style -->
+<link type="text/css" rel="stylesheet" href="src/htmlfromrss.css" />
+<!-- Include jQuery -->
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+<!-- Include htmlfromrss.js -->
+<script src="src/htmlfromrss.js"></script>
+</head>
+<body>
+<div id="container">
+<div id="header">
+<ul class="navigation">
+<li><a href="#">1</a></li>
+<li><a href="#">2</a></li>
+<li><a href="#">3</a></li>
+<li><a href="#">4</a></li>
+</ul>
+</div>
+<div class="row">
+<div id="b92" class="vesti" data-htmlfromrss="http://www.b92.net/info/rss/vesti.xml"></div>
+</div>
+<script>
+$(document).ready(function() {
+// Example by className
+$(".vesti").htmlfromrss(
+limit = 10
+);
+});
+</script>
