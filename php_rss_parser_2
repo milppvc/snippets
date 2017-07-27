@@ -1,0 +1,34 @@
+<?php
+$rss = new DOMDocument();
+$rss->load('http://www.blic.rs/rss/Vesti/Politika');
+$feed = array();
+foreach ($rss->getElementsByTagName('item') as $node) {
+$item = array (
+'title' => $node->getElementsByTagName('title')->item(0)->nodeValue,
+'desc' => $node->getElementsByTagName('description')->item(0)->nodeValue,
+'link' => $node->getElementsByTagName('link')->item(0)->nodeValue,
+'date' => $node->getElementsByTagName('pubDate')->item(0)->nodeValue,
+);
+array_push($feed, $item);
+}
+$limit = 5;
+for($x=0;$x<$limit;$x++) {
+$title = str_replace(' & ', ' &amp; ', $feed[$x]['title']);
+$link = $feed[$x]['link'];
+$description = $feed[$x]['desc'];
+$date = date('l F d, Y', strtotime($feed[$x]['date']));
+echo '<div class="card large">';
+echo '<div class="card-image">';
+echo '<img src="images/sample-1.jpg">';
+echo '<span class="card-title"><a href="'.$link.'" title="'.$title.'">'.$title.'</a>.</span>';
+echo '</div>';
+echo '<div class="card-content">';
+echo '<p>'.$description.'</p>';
+echo '</div>';
+echo '<div class="card-action">';
+echo '<a href="#">BLIC.RS</a>';
+echo '<a href="#">'.$date.'</a>';
+echo '</div>';
+echo '</div>';
+}
+?>
