@@ -1,3 +1,4 @@
+<script type="text/javascript">
 function getAge(dateString) {
 var today = new Date();
 var birthDate = new Date(dateString);
@@ -9,3 +10,4 @@ age--;
 return age;
 }
 console.log('age: ' + getAge("1990/03/13"));
+</script>
