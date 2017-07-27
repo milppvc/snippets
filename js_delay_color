@@ -1,0 +1,6 @@
+<script type="text/javascript">
+function bckgColor() {
+document.body.style.backgroundColor = "#FDD10D";
+}
+setTimeout("bckgColor()",10200);
+</script>
