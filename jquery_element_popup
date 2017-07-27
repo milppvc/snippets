@@ -1,0 +1,22 @@
+<html>
+<a id="toggle" class="button">on_click</a>
+<div id="test">
+…
+</div>
+<script type="text/javascript">
+var test = $('#test'),
+toggle = $('#toggle');
+toggle.click(function() {
+test.fadeToggle(500, function() {
+});
+});
+</script>
+<style>
+#test {
+…
+}
+#toggle{
+…
+}
+</style>
+</html>
