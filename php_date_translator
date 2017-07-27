@@ -1,0 +1,33 @@
+<?php
+$day = date("l");
+$daynum = date("j");
+$month = date("M");
+$year = date("Y");
+switch($day)
+{
+case "Monday": $day = "Pondeljak"; break;
+case "Tuesday": $day = "Utorak"; break;
+case "Wednesday": $day = "Sreda"; break;
+case "Thursday": $day = "Cetvrtak"; break;
+case "Friday": $day = "Petak"; break;
+case "Saturday": $day = "Subota"; break;
+case "Sunday": $day = "Nedelja"; break;
+default: $day = "Nepoznat"; break;
+}
+switch($month)
+{
+case "January": $month = "Januar"; break;
+case "February": $month = "Februar"; break;
+case "March": $month = "Mart"; break;
+case "April": $month = "April"; break;
+case "May": $month = "Maj"; break;
+case "June": $month = "Jun"; break;
+case "July": $month = "Jul"; break;
+case "August": $month = "Avgust"; break;
+case "September": $month = "Septembar"; break;
+case "October": $month = "Oktobar"; break;
+case "November": $month = "Novembar"; break;
+case "December": $month = "Decembar"; break;
+default: $month = "Nepoznat"; break;
+}
+?>
