@@ -1,0 +1,23 @@
+<p>
+                    <h1>Porucivanje</h1>
+                    <h2>Pozdrav</h2>
+                    <form action="https://docs.google.com/forms/d/e/1FAIpQLSezPtWlE5A3WqtMQPrAoP8kRuWUirltbZMB0tGrEHyVgETbFA/formResponse">
+                        <!-- Ваше име и презиме -->
+                        <label for="comfort">VASE IME I PREZIME</label>
+                        <input name="entry.1055247726" type="text" id="licni_podaci" />
+                        <!-- Адреса становања (улица и број) -->
+                        <label for="comfort">MESTO STANOVANJA</label>
+                        <input name="entry.1544135751" type="text" id="mesto" />
+                        <!-- Адреса становања (улица и број) -->
+                        <label for="comfort">ADRESA STANOVANJA</label>
+                        <input name="entry.1355059112" type="text" id="adresa" />
+                        <!-- Број телефона -->
+                        <label for="comfort">BROJ TELEFONA</label>
+                        <input name="entry.1515045635" type="text" id="broj_tel" />
+                        <!-- E-mail адреса (није обавезна) -->
+                        <label for="comfort">EMAIL</label>
+                        <input name="entry.489458422" type="text" id="email" />
+                        <!-- POTVRDA -->
+                        <input class="button" type="submit" value="Submit">
+                    </form>
+                </p>
