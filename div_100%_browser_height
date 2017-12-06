@@ -1,0 +1,5 @@
+<script>
+    $( document ).ready(function() {
+    $('div').css('height',$(window).height());
+    });
+</script>
