@@ -1,0 +1,14 @@
+    <script>
+    $(function() {
+        var $box = $('#main_text');
+
+        // To center the box
+        var boxLeft = ($(window).width()) / 2 - ($box.width() / 2),
+            boxTop = ($(window).height()) / 2 - ($box.height() / 2);
+
+        $box.css({
+            left: boxLeft,
+            top: boxTop
+        });
+    });
+    </script>
