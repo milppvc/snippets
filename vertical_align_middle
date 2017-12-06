@@ -1,0 +1,10 @@
+<div id="parent">
+    <div id="child">Content here</div>
+</div>
+
+#parent {display: table;}
+
+#child {
+    display: table-cell;
+    vertical-align: middle;
+}
