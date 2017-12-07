@@ -1,0 +1,22 @@
+<script>
+                $(document).ready(function() {
+                    $("#slideshow > div:gt(0)").hide();
+
+                    setInterval(function() {
+                        $('#slideshow > div:first')
+                            .fadeOut(1000)
+                            .next()
+                            .fadeIn(1000)
+                            .end()
+                            .appendTo('#slideshow');
+                    }, 5000);
+                })
+</script>
+<div id="slideshow">
+                    <div>
+                        И све стаде на који лист артије. У један трен, трен давно пресахо, стопљен у дан – дане којих одавно није.
+                    </div>
+                    <div>
+                        Чувати нас и белег да некамо бејасмо чили створови, а сада само зрневље ељде што крти земљу – да се потомци не саплету и суноврате.
+                    </div>
+</div>
