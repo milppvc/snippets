@@ -29,3 +29,6 @@ your browser will display an error message.</p>
 
 </body>
 </html>
+
+
+<input name="entry.1055247726" type="text" id="ime" placeholder="Ваше име и презиме" required oninvalid="this.setCustomValidity('Морате попунити поље са именом и презименом')"/>
