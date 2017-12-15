@@ -1,0 +1,9 @@
+<script>
+				function clearContents(element) {
+				    element.value = '';
+				}
+</script>
+        
+<button id="prvo3" type="button" onclick="clearContents(document.getElementById('prevod'));">Obriši</button>
+
+<textarea name="prevod" placeholder="Unesite tekst za preslovljavanje ovde..." rows="20" cols="100" style="width:100%;" id="prevod"></textarea>
