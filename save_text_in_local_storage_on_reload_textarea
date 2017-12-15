@@ -1,0 +1,18 @@
+<script>
+                $(document).ready(function() {
+                    window.onbeforeunload = function() {
+                        $('textarea').each(function() {
+                            var id = $(this).attr('id');
+                            var value = $(this).val();
+                            localStorage.setItem(id, value);
+                        });
+                    }
+                    window.onload = function() {
+                        $('textarea').each(function() {
+                            var id = $(this).attr('id');
+                            var text2 = localStorage.getItem(id);
+                            if (text2 !== null) $('#' + id).val(text2);
+                        });
+                    }
+                });
+                </script>
