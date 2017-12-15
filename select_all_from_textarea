@@ -1,0 +1,7 @@
+<script>
+function izaberiPrvo() {
+    document.getElementById("prevod").select();
+}
+</script>
+
+<button id="prvo" type="button" onclick="izaberiPrvo()">Izaberi</button>
