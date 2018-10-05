@@ -1,0 +1,31 @@
+//words to sentence
+
+function wordsToSentence(words) {
+   var sentence = ""; //empty string
+   for (var i = 0; i < words.length; i++) {
+      sentence += ' ' + words[i]; //add space and word to string
+   }
+   return sentence.trim(); //return the string formed
+}
+
+console.log(wordsToSentence(['this', 'is', 'a', 'sentence']));
+
+//sentence to words
+
+function _split(s, arr) {
+  var 
+    str = s.trim(),
+    words = arr || [],
+    i = str.indexOf(' ');
+
+  if(i !== -1) {
+    words.push(str.substr(0, i)); // collect the next word
+    return _split(str.slice(i + 1), words); // recur with new string and words array to keep collecting
+  } else {
+    words.push(str); // collect the last word
+    return words;
+  }
+}
+
+_split('  one two    three   ');
+//=
