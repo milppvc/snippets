@@ -1,0 +1,9 @@
+//Removing Multiple Specific Elements
+
+["bar", "baz", "foo", "foo", "qux"]
+ 
+for( var i = list.length-1; i--;){
+if ( list[i] === 'foo') list.splice(i, 1);
+}
+ 
+["bar", "baz", "qux"]
